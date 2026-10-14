@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SIGN IN</title>
+  <style>
+     body {
+  margin: 0;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+  font-family: Arial, sans-serif;
+}
+
+    h1 {
+      color: white;
+      margin-bottom: 20px;
+    }
+
+    input {
+      width: 220px;
+      padding: 10px;
+      margin: 6px 0;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+    }
+
+    input[type="submit"] {
+      background: white;
+      color: #4a00e0;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background: #4a00e0;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>SIGN IN</h1>
+
+<form action="signin.php" method="POST">
+
+  <input type="email" name="email" placeholder="Enter Your E-mail :" required><br><br>
+
+  <input type="password" name="password" placeholder="Enter Password :" required><br><br>
+
+  <input type="submit" value="SEND">
+
+</form>
+
+</body>
+</html>

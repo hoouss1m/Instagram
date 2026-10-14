@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>SIGN UP in Instagram</title>
+    <style>
+  body {
+  margin: 0;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+  font-family: Arial, sans-serif;
+}
+
+  h1 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 28px;
+    letter-spacing: 1px;
+    text-shadow: 0 3px 8px rgba(0,0,0,0.4);
+  }
+
+  input {
+    width: 220px;
+    padding: 10px;
+    margin: 6px 0;
+
+    border: none;
+    border-radius: 8px;
+    outline: none;
+
+    font-family: Arial, sans-serif;
+  }
+
+  input[type="submit"] {
+    background: white;
+    color: #4a00e0;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  input[type="submit"]:hover {
+    background: #4a00e0;
+    color: white;
+    transform: scale(1.05);
+  }
+</style>
+  </head>
+  <body>
+  
+<form action="signup.php" method="POST">
+  
+<h1>SIGN UP :</h1>
+
+<input type="text" name="username" placeholder="Enter User name:" required><br><br>
+
+<input type="email" name="email" placeholder="Enter Your E-mail:" required><br><br>
+
+<input type="password" name="password" placeholder="Enter Password:" required><br><br>
+
+<input type="password" name="confirm_password" placeholder="Confirm Password:" required><br><br>
+
+<input type="submit" value="SEND">
+
+</form>
+
+  </body>
+
+</html>
